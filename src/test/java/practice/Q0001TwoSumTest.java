@@ -18,6 +18,15 @@ public class Q0001TwoSumTest {
         int[] ans = test.twoSum(nums, target);
         assert nums[ans[0]] + nums[ans[1]] == target;
     }
-    
+
+    @Test
+    public void test1() {
+        int[] nums = {15, 11, 7, 2};
+        int target = 9;
+
+        int[] ans = test.twoSum1(nums, target);
+        assert nums[ans[0]] + nums[ans[1]] == target;
+    }
+
     private Q0001TwoSum test = new Q0001TwoSum();
 }
